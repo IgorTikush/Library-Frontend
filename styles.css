@@ -1,0 +1,172 @@
+html {
+    height:100%;
+}
+body {
+    background-color: #111111;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    color:white;
+    margin: 50px;
+    /* height:100%; */
+}
+  
+nav {
+text-align: center;
+font-size: 35px;
+}
+
+main {
+padding: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.card {
+border-radius: 8px;
+box-shadow: 0px -5px 43px 1px rgba(34, 60, 80, 0.2);
+width: 300px;
+height: 300px;
+text-align: center;
+transition: 750ms;
+background-color: #222222;
+margin-bottom: 20px;
+padding: 10px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+animation-play-state: paused;
+}
+
+.cardAdd {
+cursor: pointer;
+}
+
+.indexCard {
+overflow: unset;
+white-space:normal;
+}
+.description {
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+
+.card:hover {
+transform: scale(1.1);
+}
+
+a {
+color: inherit;
+text-decoration: none;
+
+}
+
+.form{
+max-width: 40em;
+margin: 0 auto;
+position: relative;
+
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.form, input, textarea, button  {
+padding: 0.75em 1em;
+border: none;
+display: block;
+border: none;
+}
+
+label {
+color: white;
+padding-left: 0;
+
+}
+
+input, textarea {
+line-height: normal;
+width: 100%;
+box-sizing: border-box;
+background: #222222; 
+color: white;
+outline: none;
+font-size: 20px;
+}
+
+.field {
+width: 100%;
+margin: 0 0 1.5em 0;
+}
+
+button {
+line-height: normal;
+cursor: pointer;
+background: #222222; 
+color: white;
+font-weight: bold;
+font-weight: bold;
+padding-left: 2em;
+padding-right: 2em;
+font-size: 25px;
+width: 200px;
+margin: 10px auto; 
+}
+
+button:hover {
+    background: #302e2e;
+}
+
+object {
+stroke: white;
+fill: white;
+}
+
+.buttons {
+display: flex;
+flex-direction: column;
+width: max-content;
+align-content: center;
+margin: 0 auto;
+}
+img {
+width: 300px;
+height: 200px;
+display: block;
+margin: auto 0 ;
+}
+
+.popupForm {
+border-radius: 8px;
+width: 20rem;
+height: 40rem;
+background-color: #201f1f;
+visibility: hidden;
+left: 0;
+right: 0;
+top: 0;
+left: 0;
+position: absolute;
+margin: 2rem auto;
+text-align: center;
+}
+
+.show {
+    visibility: visible;
+    z-index: 100;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.readToggle {
+    cursor: pointer;
+}
+
+.radio {
+    display: inline;
+    width: auto;
+}
